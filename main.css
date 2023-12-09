@@ -1,0 +1,166 @@
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #7ab2c0;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+    font-family: 'Dancing script', sans-serif;
+}
+
+.second-header{
+    background-color: #F6EAE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52vw;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+.movie-container {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    width: 450px;
+    margin: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-container:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.movie-container img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.title {
+    margin-bottom: -13px;
+}
+
+.originalTitle {
+    font-family: 'Noto Sans JP', sans-serif;  
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -20px;
+    height: 100px;    
+   
+}
+
+.year {
+    position: absolute;
+    margin-left: 372px;
+    margin-top: -137px; 
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.producer {
+    margin-top: 13px;
+    font-weight: bold;
+}
+
+.viewButton {
+    background-color: transparent;
+    color: #000000;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-left: 345px;
+}
+    
+
+.viewButton:hover {
+    background-color: #233047;
+    color: #FFFFFF;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .close {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    padding: 10px;
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    background-color: #233047;
+    color: #FFFFFF;
+  }
+  
+  .modal-image {
+    border-radius: 5px;
+  }
+
+  #modalDetailsContainer {
+    text-align: center;
+  }
+
+  body.modal-open {
+    overflow: hidden;
+  }
